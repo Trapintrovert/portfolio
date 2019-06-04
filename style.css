@@ -1,0 +1,74 @@
+/*
+  Project: Triangle Africa Landing Page
+  Author: Trap Introvert
+  github: https://github.com/Trapintrovert
+
+ */
+
+ /* HOME PAGE STYLE */
+
+ @media (max-width:360px) {
+   .port-item{
+     width: 25% !important;
+   }
+ }
+
+@media (max-width:320px) {
+
+}
+
+@media (max-width:575px) {
+
+}
+
+/* Medium devices (tablets) */
+@media (min-width:768px) {
+
+
+}
+
+
+/* Large devices (desktops) */
+@media (min-width:992px) {
+
+}
+
+@media (min-width:1000px) {
+
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width:1200px) {
+  .port-item{
+    padding: 3em !important;
+  }
+}
+
+
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+
+
+#main-header img{
+  width: 100%;
+  height: 100%;
+}
+
+.port-item{
+  width: 30%;
+}
+
+.port-item .fa{
+  font-size: 2em;
+
+}
+
+
+
+
+.port-item:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
