@@ -44,6 +44,10 @@
   }
 }
 
+body{
+  font-family: 'Roboto Mono', monospace;
+  background: #000;
+}
 
 .bg-black {
   background: #000;
@@ -65,7 +69,9 @@
 
 }
 
-
+#main-header a {
+  color: #fff;
+}
 
 
 .port-item:hover{
