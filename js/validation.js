@@ -25,7 +25,7 @@ function valEmail() {
 }
 
 function valMessage() {
-  const re = /^[a-zA-Z]{2,400}$/;
+  const re = /^[a-zA-Z]$/;
   if(!re.test(message.value)) {
     message.classList.add('is-invalid');
   } else {
