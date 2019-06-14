@@ -33,7 +33,7 @@
     <header id="main-header">
       <div class="row no-gutters">
         <div class="col-lg-4 col-md-5">
-          <img src="images/niyi.jpg" alt="">
+          <img src="images/niyi.jpg" alt="Photo">
         </div>
         <div class="col-lg-8 col-md-7">
           <div class="d-flex flex-column">
@@ -45,7 +45,7 @@
                 <div class="p-3"><a href="https://instagram.com/trapintrovert"><i class="fa fa-instagram"></i></a></div>
                 <div class="p-3"><a href="https://github.com/Trapintrovert"><i class="fa fa-github"></i></a></div>
                 <div class="p-3"><a href="https://www.linkedin.com/in/adedamola-adeniyi-aa73b7106/"><i class="fa fa-linkedin"></i></a></div>
-                <div class="p-3"><a href="https://medium.com/@adedamolaadeniyi/edit"><i class="fa fa-medium"></i></a></div>
+                <div class="p-3"><a href="https://medium.com/@adedamolaadeniyi/"><i class="fa fa-medium"></i></a></div>
               </div>
             </div>
 
@@ -85,7 +85,7 @@
 
       <div class="card card-body py-5">
         <h3>My Skills</h3>
-        <p>Listen below are my skill-set. I'm striving to improve more on what i know already to be a better developer. </p>
+        <p>Listen below are my skill-set. I'm striving to improve more on what i know already to become a better developer.</p>
         <hr>
         <h4>HTML</h4>
         <div class="progress mb-3">
@@ -230,13 +230,18 @@
       <div class="card card-body py-5">
         <h3>Get in touch</h3>
         <p>I will respond to your email as soon as possible. Wink!</p>
-        <form >
+        <form action="https://formspree.io/inboxadeniyi@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Adeniyi's Form">
+          <input type="hidden" name="_next" value="/thankyou.html" >
           <div class="form-group">
             <div class="input-group input-group-lg">
               <span class="input-group-addon bg-dark text-white">
                 <i class="fa fa-user p-3"></i>
               </span>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+              <input type="text" class="form-control bg-dark text-white" id="name" name="name" placeholder="Name">
+              <div class="invalid-feedback">
+                Maka why nah. Enter between 2 to 20 characters.
+              </div>
             </div>
           </div>
           <div class="form-group">
@@ -244,7 +249,10 @@
               <span class="input-group-addon bg-dark text-white">
                 <i class="fa fa-envelope p-3"></i>
               </span>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+              <input type="email" class="form-control bg-dark text-white" id="email" name="_replyto" placeholder="Email">
+              <div class="invalid-feedback">
+                Abeg enter a valid email address.
+              </div>
             </div>
           </div>
           <div class="form-group">
@@ -252,10 +260,13 @@
               <span class="input-group-addon bg-dark text-white">
                 <i class="fa fa-pencil p-3"></i>
               </span>
-              <textarea class="form-control bg-dark text-white" rows="5" placeholder="Message"></textarea>
+              <textarea class="form-control bg-dark text-white" rows="5" id="message" name="message" placeholder="Message"></textarea>
+              <div class="invalid-feedback">
+                Abah! Write something nah.
+              </div>
             </div>
           </div>
-          <input type="submit" value="submit" class="btn btn-dark btn-block btn-lg">
+          <input type="submit" value="Send" class="btn btn-dark btn-block btn-lg">
         </form>
       </div>
     </div>
@@ -273,6 +284,7 @@
    <script src="jquery/jquery-2.1.4.min.js"></script>
    <script src="jquery/popper.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/validation.js"></script>
     <script>
       $('.port-item').click(function(){
         $('.collapse').collapse('hide');
