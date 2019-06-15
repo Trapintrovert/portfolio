@@ -1,5 +1,4 @@
 /*
-  Project: Triangle Africa Landing Page
   Author: Trap Introvert
   github: https://github.com/Trapintrovert
 
@@ -122,4 +121,30 @@ body{
 #thanks .btn-outline-light{
   margin-left: 36%;
   width: 30%;
+}
+
+#home img{
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+#home .inner-card{
+  border: 0px;
+}
+
+#home .card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .9s ease;
+  opacity:0;
+ border-radius: 8px;
+}
+#home .inner-card:hover .card-img-overlay{
+ opacity: 0.7;
+ background-color: #000;
+ color: #ffffff;
 }
