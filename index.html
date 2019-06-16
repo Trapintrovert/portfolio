@@ -18,6 +18,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -52,7 +53,7 @@
             </div>
 
             <div class="p-4 bg-black lead">
-              Experienced Front End Developer
+              I'm a <span class="typed"></span>
             </div>
 
             <div>
@@ -88,14 +89,14 @@
 
           <div class="card card-body py-5">
             <h3>My Skills</h3>
-            <p>Listen below are my skill-set. I'm striving to improve more on what i know already to become a better developer.</p>
+            <p>The slide below includes my skill-set. I'm striving to improve more on what i know already to become a better developer.</p>
             <hr>
             <div class="owl-carousel owl-theme">
               <div class="item">
                 <div class="card inner-card">
                   <img src="images/js.png" alt="JavaScript Logo" class="img-fluid">
                   <div class="card-img-overlay">
-                    <p class="text-white">Frameworks: Jquery</p>
+                    <p class="text-white pt-5">Frameworks: Jquery and learning ReactJs at the moment</p>
                   </div>
                 </div>
               </div>
@@ -103,7 +104,7 @@
                 <div class="card inner-card">
                   <img src="images/php.png" alt="Php Logo" class="img-fluid">
                   <div class="card-img-overlay">
-                    <p class="text-white pt-5">I'm new to PHP. Looking forward to start using Frameworks like Laravel.</p>
+                    <p class="text-white pt-2">Currently learning Php and looking forward to get started with Frameworks like Laravel.</p>
                   </div>
                 </div>
               </div>
@@ -111,7 +112,7 @@
                 <div class="card inner-card">
                   <img src="images/mysql.jpg" alt="Mysql Logo" class="img-fluid">
                   <div class="card-img-overlay">
-                    <p class="text-white pt-5">At Meddle level with Mysql</p>
+                    <p class="text-white pt-5">At Middle level with Mysql</p>
                   </div>
                 </div>
               </div>
@@ -273,7 +274,7 @@
       <div class="card card-body bg-dark text-white py-5">
         <h2>Contact</h2>
           <div class="p-3">
-            <i class="fa fa-phone mr-3"></i> (234) 08132174056
+            <i class="fa fa-phone mr-3"></i> (+234) 8132174056
           </div>
           <div class="pl-3">
             <i class="fa fa-envelope mr-2"></i> inboxadeniyi@gmail.com
@@ -333,6 +334,7 @@
 
    <script src="jquery/jquery-2.1.4.min.js"></script>
    <script src="jquery/popper.min.js"></script>
+   <script src="js/typed.min.js"></script>
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/validation.js"></script>
@@ -372,7 +374,33 @@
               }
           }
         });
+
       });
+
+              var typed = new Typed(".typed",{
+            		strings: ["Front End Developer"],
+            		// typing speed
+            		typeSpeed: 50,
+
+                startDelay: 1000,
+            		// backspacing speed
+            		backSpeed: 70,
+            		// time before backspacing
+            		backDelay: 500,
+            		// loop
+            		loop: true,
+            		// false = infinite
+            		loopCount: 5,
+            		// show cursor
+            		showCursor: true,
+            		// character for cursor
+            		cursorChar: "|",
+            		// attribute to type (null == text)
+            		attr: null,
+            		// either html or text
+            		contentType: 'html'
+
+            	});
     </script>
 </body>
 </html>
